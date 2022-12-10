@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main-checks if n is equal, less or greater than zero
- *
- * Return: zero
- */
+* main - checks is n is positive, negative or equals to zero
+* 
+* Return: zero
+*/
 
 int main(void)
 {
