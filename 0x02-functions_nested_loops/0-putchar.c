@@ -1,9 +1,9 @@
 #include "main.h"
 
-/*
-main - Entry point
-
-Retrurn: Always 0
+/**
+*main - Entry point
+*
+*Retrurn: Always 0
 */
 int main(void)
 {
