@@ -8,7 +8,8 @@
  * @src: string to be copied
  * Return: the pointer to dest
  */
-char *_strcpy(char *dest, char *src)
+
+ char *_strcpy(char *dest, char *src)
 {
 	int len, i;
 
@@ -18,7 +19,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		len++;
 	}
-	
+
 	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
