@@ -2,6 +2,7 @@
 /**
  * _strncat - concatenates two strings
  * @dest: string 1
+ * @src: string 2
  * @n: integer limit of src
  * Return: dest
  */
