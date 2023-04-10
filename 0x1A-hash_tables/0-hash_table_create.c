@@ -2,15 +2,15 @@
 
 /**
  * the #include "hash_tables.h" library enables us to create hash tables.
- * the size of the array woould be determine by; @size.
+ * the size of the array would be determined by; @size.
  *
- * The Return type would be NULL if an error is encountred.
- *      else - a pointer to the new hash table.
+ * The Return type would be NULL if an error is encountered.
+ * 			else - a pointer to the new hash table.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht;
-	unsigned long int x;
+	unsigned long int i;
 
 	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
@@ -19,14 +19,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ht->size = size;
 	ht->array = malloc(sizeof(hash_node_t *) * size);
 	if (ht->array == NULL)
-		
 		return (NULL);
-
-	for (x = 0; x < size; x++)
-		ht->array[x] = NULL;
+	for (i = 0; i < size; i++)
+		ht->array[i] = NULL;
 
 	return (ht);
 }
-
-
-
